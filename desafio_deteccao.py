@@ -19,7 +19,7 @@ class Desafio_Deteccao():
 
     def carrega_perfil_valores_aleatoriamente(self):
         """ Por padrão, serão gerados 80 números aleatoriamente entre 1 a 100 (valores configuráveis) e salvo em self._perfil_valores. """
-        self._perfil_valores = [random.randint(self._menor_valor_perfil, self._maior_valor_perfil) for contador in range(self._quantidade_elementos_perfil)]
+        self._perfil_valores = [random.randint(self._menor_valor_perfil, self._maior_valor_perfil) for _ in range(self._quantidade_elementos_perfil)]
 
     def __getitem__(self, item):
         return self._perfil_valores[item]
